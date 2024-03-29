@@ -1,0 +1,112 @@
+﻿@model IEnumerable<ClothX.DbModels.ClientOrder>
+
+@{
+	bool isMyOrders = ViewBag.IsMyOrders;
+}
+
+
+
+
+<div class="table-responsive">
+	<table class="table data-table">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Title)
+				</th>
+				<th>
+					Status
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Measurements)
+				</th>
+				<th>Price</th>
+				<th>Deadline</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Title)
+					</td>
+					<td>
+						@if (item.IsDelivered == true)
+						{
+							<span class="chip bg-success">Order Completed</span>
+						}
+						else if (item.IsConfirmed == true)
+						{
+							<span class="chip bg-info">In Progress</span>
+						}
+						else if (item.IsPaid == true)
+						{
+							<span class="chip bg-secondary">Paid</span>
+						}
+						else
+						{
+							<span class="chip bg-danger">Not Paid</span>
+						}
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Measurements)
+					</td>
+					<td>
+						@item.Price Rs
+					</td>
+					<td>
+						@item.Deadline
+					</td>
+					<td>
+
+						<a asp-action="Preview" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+						@if (isMyOrders == true)
+						{
+							@if (item.IsConfirmed != true)
+							{
+								<a asp-action="PlaceOrder" class="btn btn-secondary" asp-route-Order="@item.Id">Edit</a>
+								@if (item.IsActive == true)
+								{
+									<a asp-action="Delete" class="btn btn-danger" asp-route-Order="@item.Id">Remove</a>
+								}
+								else
+								{
+									<a asp-action="Delete" class="btn btn-warning" asp-route-Order="@item.Id">Make Active</a>
+								}
+							}
+						}
+						else
+						{
+							@if (item.IsPaid == false)
+							{
+								<a asp-action="ChangeOrderStatus" class="btn btn-success" asp-route-Order="@item.Id" asp-route-Status="1">Confirm Payment</a>
+								<a asp-action="ChangeOrderStatus" class="btn btn-danger" asp-route-Order="@item.Id" asp-route-Status="0">Cancel Order</a>
+							}
+							else if (item.IsConfirmed == false)
+							{
+								<a asp-action="ChangeOrderStatus" class="btn btn-success" asp-route-Order="@item.Id" asp-route-Status="2">Confirm Order</a>
+								<a asp-action="ChangeOrderStatus" class="btn btn-danger" asp-route-Order="@item.Id" asp-route-Status="-1">Return Payment</a>
+							}
+							else if (item.IsDelivered == false)
+							{
+								<a asp-action="ChangeOrderStatus" class="btn btn-success" asp-route-Order="@item.Id" asp-route-Status="3">Order Completed</a>
+								<a asp-action="ChangeOrderStatus" class="btn btn-danger" asp-route-Order="@item.Id" asp-route-Status="-1">Return Payment</a>
+							}
+							else
+							{
+								<span class="chip bg-success">Order Delivered</span>
+							}
+						}
+
+
+
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+</div>
+

@@ -1,0 +1,59 @@
+﻿@model ClothX.DbModels.Feature
+
+@{
+    Layout = null;
+}
+
+<div class="modal fade" id="FeatureModal" tabindex="-1" aria-labelledby="FeatureModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                @if (ViewBag.Id != 0)
+                {
+                    <h1 class="modal-title fs-5" id="FeatureModalLabel">Edit</h1>
+                }
+                else
+                {
+                    <h1 class="modal-title fs-5" id="FeatureModalLabel">Create</h1>
+                }
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="CreateFeature" enctype="multipart/form-data">
+                    <input asp-for="Id" value="@ViewBag.Id" hidden />
+                    <input asp-for="FeatureGroupId" value="@ViewBag.FeatureGroupId" hidden />
+
+
+                    <div class="form-floating my-2">
+                        <input asp-for="Name" class="form-control" required />
+                        <label asp-for="Name" class="control-label"></label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating my-2">
+                        <input min="1" max="10000" asp-for="Price" class="form-control" required />
+                        <label asp-for="Price" class="control-label"></label>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating my-2">
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                        <label asp-for="Description" class="control-label"></label>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+
+
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

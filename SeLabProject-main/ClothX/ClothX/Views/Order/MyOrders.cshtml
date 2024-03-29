@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ClothX.DbModels.ClientOrder>
+
+@{
+	ViewData["Title"] = "MyOrders";
+}
+
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-12">
+		<h1><b>My Orders</b></h1>
+	</div>
+	<div class="col-md-6 col-sm-12 col-12" style="display: flex; justify-content: flex-end;align-items:center ">
+		<a class="btn btn-primary" asp-action="PlaceOrder">Place Order</a>
+	</div>
+</div>
+
+<partial name="ClientOrdersPartialView" model="Model"/>
+

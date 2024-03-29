@@ -1,0 +1,96 @@
+:root {
+    --btn-primary-color: #0d6efd;
+    --btn-secondary-color: #6c757d;
+    --btn-success-color: #198754;
+    --btn-danger-color: #dc3545;
+    --btn-warning-color: #ffc107;
+    --btn-info-color: #0dcaf0;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin-bottom: 0px !important;
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    margin-top: 200px !important;
+    margin-bottom: 0px !important;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.btn {
+    border-radius: 10px !important;
+    margin: 1px !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: var(--btn-primary-color) !important;
+    border-color: var(--btn-primary-color) !important;
+}
+
+.btn-secondary {
+    color: #fff !important;
+    background-color: var(--btn-secondary-color) !important;
+    border-color: var(--btn-secondary-color) !important;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: var(--btn-success-color) !important;
+    border-color: var(--btn-success-color) !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: var(--btn-danger-color) !important;
+    border-color: var(--btn-danger-color) !important;
+}
+
+.btn-warning {
+    color: #fff !important;
+    background-color: var(--btn-warning-color) !important;
+    border-color: var(--btn-warning-color) !important;
+}
+
+.btn-info {
+    color: #fff !important;
+    background-color: var(--btn-info-color) !important;
+    border-color: var(--btn-info-color) !important;
+}
+
+
+
+.chip {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+}
+
+.table-responsive {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

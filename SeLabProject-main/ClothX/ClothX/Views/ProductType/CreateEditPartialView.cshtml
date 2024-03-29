@@ -1,0 +1,49 @@
+﻿@model ClothX.DbModels.ProductCategory
+
+@{
+    Layout = null;
+}
+
+<div class="modal fade" id="ProductCategoryModal" tabindex="-1" aria-labelledby="ProductCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                @if (ViewBag.Id != 0)
+                {
+                    <h1 class="modal-title fs-5" id="ProductCategoryModalLabel">Edit</h1>
+                }
+                else
+                {
+                    <h1 class="modal-title fs-5" id="ProductCategoryModalLabel">Create</h1>
+                }
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <input asp-for="Id" value="@ViewBag.Id" hidden />
+
+
+                    <div class="form-floating my-2">
+                        <input asp-for="Name" class="form-control" required />
+                        <label asp-for="Name" class="control-label"></label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-floating my-2">
+                        <input asp-for="Price" min="1" class="form-control" required />
+                        <label asp-for="Price" class="control-label"></label>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

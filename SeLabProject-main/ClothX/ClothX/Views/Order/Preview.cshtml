@@ -1,0 +1,106 @@
+﻿@model ClothX.DbModels.ClientOrder
+
+@{
+	ViewData["Title"] = "Preview";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-pager.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+@if (Model != null)
+{
+	<div class="card">
+		<div class="card-header">
+			<h1>
+				@Model.Title (Status: @(Model.IsActive == true ? "In-Active" : Model.IsDelivered == true ? "Delivered" : Model.IsConfirmed == true ? "Confirmed" : Model.IsPaid == true ? "Paid" : "Not Paid"))
+			</h1>
+
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">By: @Model.Client.FirstName @Model.Client.LastName</h5>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h6>Price: </h6>
+					<p>@Model.Price</p>
+				</div>
+				<div class="col-md-6">
+					<h6>Order Type: </h6>
+					<p>@Model.OrderTypeNavigation.Name</p>
+				</div>
+				<div class="col-md-6">
+					<h6>Measurements: </h6>
+					<p>@Model.Measurements</p>
+				</div>
+				<div class="col-md-6">
+					<h6>DeadLine: </h6>
+					<p>@Model.Deadline.ToShortDateString()</p>
+				</div>
+				<div class="col-md-6">
+					<h6>Selected Features</h6>
+					<ul>
+						@foreach (var i in Model.OrderFeatures)
+						{
+							if(i.IsActive==true)
+							{
+								<li>@i.Feature.Name - @i.Feature.Price</li>
+							}
+						}
+					</ul>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<h6>Description</h6>
+			@Html.Raw(Model.Description)
+			@if (Model.ClientOrderIdeaImages.Count > 0)
+			{
+				<h6>Order Ideas</h6>
+				<div id="gallery" class="mt-3">
+					@foreach (var img in Model.ClientOrderIdeaImages)
+					{
+						<a href="@img.ImagePath" data-lg-size="1000-600" data-lg-thumbnail="@img.ImagePath">
+							<img loading="lazy" decoding="async" src="@img.ImagePath" width="150" height="150" />
+						</a>
+					}
+				</div>
+			}
+
+		</div>
+	</div>
+}
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/pager/lg-pager.min.js"></script>
+
+
+<script>
+	let gallery = document.getElementById("gallery");
+	lightGallery(gallery, {
+		controls: true,
+		counter: true,
+		download: true,
+		plugins: [lgAutoplay, lgFullscreen, lgThumbnail, lgZoom, lgPager],
+		thumbWidth: 100,
+		thumbHeight: 100
+	});
+</script>

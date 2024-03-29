@@ -1,0 +1,141 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@using ClothX.DbModels;
+@using ClothX.Utility;
+@{
+	Layout = UserUtility.Instance.GetLayout(User);
+
+	ViewData["Title"] = "Home Page";
+    ViewBag.IsContainer = true;
+}
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>Services</h1>
+                    <p class="mb-4">
+                        Elevate your wardrobe with ClothX, where discerning clients experience the art of bespoke tailoring, creating fashion that speaks their style.
+                    </p>
+                    <p>
+                        <a asp-controller="Order" asp-action="PlaceOrder" class="btn btn-warning me-2">Order Now</a>
+                        <a asp-controller="Project" asp-action="Index" class="btn btn-white-outline">Explore</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap">
+                    <img src="~/ecommerceAssets/images/hero-image.jpg" style="border-radius: 20px; width: 600px; " class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+<!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/truck.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Custom Tailoring</h3>
+                    <p>
+                        The primary service where clients can order tailor-made clothing to their exact specifications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/bag.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Alterations and Repairs</h3>
+                    <p>
+                        Expert alterations and repairs to ensure perfect fits and the longevity of clothing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/support.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Consultations</h3>
+                    <p>
+                        Personalized consultations with experienced tailors to discuss design ideas and style preferences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                   @* <div class="icon">
+                        <img src="images/return.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Wedding Attire</h3>
+                    <p>
+                        Specializing in crafting wedding dresses, tuxedos, bridesmaid dresses, and other wedding-related attire.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/truck.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Corporate and Business Attire:</h3>
+                    <p>
+                        Offering tailored suits, shirts, and dresses suitable for the workplace.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                   @* <div class="icon">
+                        <img src="images/bag.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Casual Wear</h3>
+                    <p>
+                        Custom creation of everyday clothing, including jeans, t-shirts, and casual dresses.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/support.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Formal Wear:</h3>
+                    <p>
+                        Crafting elegant evening gowns, black-tie attire, and formal suits for special occasions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+                <div class="feature">
+                    @*<div class="icon">
+                        <img src="images/return.svg" alt="Image" class="imf-fluid" />
+                    </div>*@
+                    <h3>Accessories</h3>
+                    <p>
+                        Providing custom accessories like ties, scarves, and pocket squares to complement clothing orders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Why Choose Us Section -->

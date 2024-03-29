@@ -1,0 +1,44 @@
+﻿@page "/Account/Login"
+@model LoginModel
+
+@{
+	ViewData["Title"] = "Log in";
+	ViewBag.TitleText = "Login to Your Account";
+	ViewBag.MainDivClass = "col-lg-4 offset-lg-4";
+	Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<form id="account" method="post" style="margin-top: 80px">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<div class="md-form md-outline form-lg">
+		<label asp-for="Input.Email" class="form-lg" style="font-size: 16px"></label>
+		<input asp-for="Input.Email" class="form-control form-control-lg" autocomplete="username" aria-required="true" style="font-size: 16px" />
+		<span asp-validation-for="Input.Email" class="field-validation-valid text-danger" style="font-size: 16px"></span>
+	</div>
+	<div class="form-lg md-form md-outline">
+		<label asp-for="Input.Password" class="form-lg" style="font-size: 16px"></label>
+		<input asp-for="Input.Password" class="form-control form-control-lg" style="font-size: 16px" />
+		<span asp-validation-for="Input.Password" class="field-validation-valid text-danger" style="font-size: 16px"></span>
+	</div>
+	<p>
+		<a href="./ForgotPassword" style="text-decoration: none;">Forgot your password?</a>
+		<br />
+		If your email is not confirmed,
+		<a href="./ResendEmailConfirmation" style="text-decoration: none;">click here</a>
+		to resend email.
+	</p>
+	<br />
+	<br />
+	<br />
+	<div style="flex-flow: row;display: flex;justify-content: space-between;align-items: center;">
+		<a href="./Register" style="font-weight: bolder; text-decoration: none;">Create Account</a>
+
+		<button type="submit" value="Log in" class="btn account-btn btn-md waves-effect waves-light">
+			Login
+		</button>
+	</div>
+	<br />
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,217 @@
+﻿@model ClothX.ViewModels.ClientOrderViewModel
+@using ClothX.DbModels;
+@{
+    ViewData["Title"] = "Place Order";
+    if (ViewBag.OrderId == 0)
+    {
+        ViewData["Title"] = "Place Order";
+    }
+    else
+    {
+        ViewData["Title"] = "Edit Order";
+    }
+
+    List<string> measurements = ViewBag.PreMeasurement;
+
+    List<FeatureGroup> groups = ViewBag.Features;
+
+    ICollection<OrderFeature> orderFeatures = ViewBag.OrderFeatures;
+}
+<!-- TinyMCE -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    window.onerror = null;
+    tinymce.init({
+        selector: '#tiny',
+        plugins: 'anchor autolink charmap codesample emoticons imagetools image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        image_title: true,
+        automatic_uploads: true,
+        file_picker_ypes: 'image',
+        file_picker_callback: function (cb, value, meta) {
+            var input = document.createElement('input');
+            input.setAttribute('type', 'file');
+            input.setAttribute('accept', 'image/*');
+            input.onchange = function () {
+                var file = this.files[0];
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var id = 'blobid' + (new Date()).getTime();
+                    var blobCache = tinymce.activeEditor.editorUpload.blobCache;
+                    var base64 = reader.result.split(',')[1];
+                    var blobInfo = blobCache.create(id, file, base64);
+                    blobCache.add(blobInfo);
+
+                    cb(blobInfo.blobUri(), { title: file.name });
+                };
+                reader.readAsDataURL(file);
+            };
+            input.click();
+        },
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ]
+    });
+</script>
+<style>
+    .tox-notifications-container {
+        display: none;
+    }
+
+</style>
+<!-- TinyMCE -->
+<!--Style Start for Input File-->
+<style>
+    input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        left: 8px;
+        font-size: 17px;
+        color: #b8b8b8;
+    }
+
+    .button-wrap {
+        position: relative;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #8ebf42;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+    }
+</style>
+<!--Style End for Input File-->
+
+
+<div class="card">
+    <div class="card-body">
+        <h1 class="card-title p-3">@ViewData["Title"] </h1>
+        <form asp-action="PlaceOrder" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-12 p-3">
+                <div class="form-floating">
+                    <input asp-for="Id" value="@ViewBag.OrderId" hidden />
+                    <input asp-for="Title" class="form-control" />
+                    <label asp-for="Title" class="control-label"></label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select asp-for="OrderType" class="form-select" asp-items="ViewBag.ProjectCategory">
+                        </select>
+                        <label asp-for="OrderType" class="control-label"></label>
+                        <span asp-validation-for="OrderType" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input asp-for="Measurements" class="form-control" list="suggestions" />
+                        <datalist id="suggestions">
+                            @foreach (var u in measurements)
+                            {
+                                <option value="@u"/>
+                            }
+                        </datalist>
+                        <label asp-for="Measurements" class="control-label"></label>
+                        <span asp-validation-for="Measurements" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                @foreach (var g in groups)
+                {
+                    <div class="col-md-6">
+                        <h4>@g.Name</h4>
+                        @foreach (var i in g.Features)
+                        {
+                            if(i.IsActive==true)
+                            {
+                                @if (ViewBag.OrderId == 0)
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="@i.Id" type="radio" name="Feature-@g.Id" id="radio-@i.Id" @Html.Raw(i==g.Features.FirstOrDefault()?"checked":"")>
+                                        <label class="form-check-label" for="radio-@i.Id">
+                                            @i.Name - @i.Price Rs
+                                        </label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="@i.Id" type="radio" name="Feature-@g.Id" id="radio-@i.Id" @Html.Raw(orderFeatures.Any(x=>x.FeatureId==i.Id)?"checked":"")>
+                                        <label class="form-check-label" for="radio-@i.Id">
+                                            @i.Name - @i.Price Rs
+                                        </label>
+                                    </div>
+                                }
+                            }
+                            
+
+                    }
+                    </div>
+                }
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <div class="button-wrap">
+                        <label class="button" for="images">Upload Ideas</label>
+                        <input id="images" accept="image/*" asp-for="ideaImages" multiple name="ideaImages" type="file">
+                        @if (ViewBag.OrderId == 0)
+                        {
+                            <span id="selectedFiles">No File Selected</span>
+                        }
+                        else
+                        {
+                            <span id="selectedFiles"></span>
+                        }
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input asp-for="Deadline" class="form-control" />
+                        <label asp-for="Deadline" class="control-label"></label>
+                        <span asp-validation-for="Deadline" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-12 p-3">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" id="tiny"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group p-3 d-flex justify-content-end">
+                <a class="btn btn-secondary m-1" asp-action="MyOrders">Cancel</a>
+                <input type="submit" value="Save" class="btn btn-success m-1" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+
+        const fileInput2 = document.getElementById('images');
+        const selectedFile2 = document.getElementById('selectedFiles');
+
+        fileInput2.addEventListener('change', function (event) {
+            const files = event.target.files;
+            selectedFile2.textContent = `Number of selected files: ${files.length}`;
+        });
+    </script>
+}

@@ -1,0 +1,4 @@
+2023-11-26 18:50:05.2973|Error|'System.Dynamic.DynamicObject' does not contain a definition for 'OrderFeatures' occurred in ClothX.Controllers.OrderController's PlaceOrder method. | 
+2023-11-26 18:50:13.9064|Error|'System.Dynamic.DynamicObject' does not contain a definition for 'OrderFeatures' occurred in ClothX.Controllers.OrderController's PlaceOrder method. | 
+2023-11-26 18:51:23.5768|Error|'System.Dynamic.DynamicObject' does not contain a definition for 'OrderFeatures' occurred in ClothX.Controllers.OrderController's PlaceOrder method. | 
+2023-11-26 18:56:47.7497|Error|An error occurred while saving the entity changes. See the inner exception for details. occurred in ClothX.Controllers.FeatureController's Create method. | 

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ClothX.DbModels.ClientOrder>
+
+@{
+	ViewData["Title"] = "Client Orders";
+}
+
+
+<h1>Client Orders</h1>
+
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-12">
+		<a class="btn btn-primary" asp-controller="Report" asp-action="Order" asp-route-Month="@false">This Year Report</a>
+	</div>
+	<div class="col-md-6 col-sm-12 col-12" style="display: flex; justify-content: flex-end;align-items:center ">
+		<a class="btn btn-primary" asp-controller="Report" asp-action="Order" asp-route-Month="@true">This Month Report</a>
+	</div>
+</div>
+
+<partial name="ClientOrdersPartialView" model="Model"/>
+

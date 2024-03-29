@@ -1,0 +1,274 @@
+﻿@using ClothX.Constants;
+@{
+	bool? isHome = ViewBag.IsHomePage;
+	bool? IsContainer = ViewBag.IsContainer;
+}
+
+
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="author" content="Untree.co" />
+	<link rel="shortcut icon" href="~/favicon.ico" />
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/ClothX.styles.css" asp-append-version="true" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" />
+	<link href="~/ecommerceAssets/css/tiny-slider.css" rel="stylesheet" />
+	<link href="~/ecommerceAssets/css/style.css" rel="stylesheet" />
+	<title>@ViewData["Title"] - ClothX</title>
+</head>
+
+<body>
+	<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-lg navbar-dark bg-dark"
+		 arial-label="Furni navigation bar">
+		<div class="container">
+			<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ClothX<span></span></a>
+
+			<button class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarsFurni"
+					aria-controls="navbarsFurni"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li id="Home-li" class="nav-item">
+						<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+					</li>
+					@if(User.IsInRole(RoleType.Tailor.ToString()))
+					{
+						<li id="Order-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Order" asp-action="ClientOrders">Client Orders</a>
+						</li>
+						<li id="ProductType-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="ProductType" asp-action="Index">Product Types</a>
+						</li>
+						<li id="Feature-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Feature" asp-action="Index">Feature Groups</a>
+						</li>
+						<li id="User-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+						</li>
+						<li id="Feedback-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Feedback" asp-action="Index">View Feedbacks</a>
+						</li>
+					}
+					else if (User.IsInRole(RoleType.User.ToString()))
+					{
+						<li id="Order-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Order" asp-action="MyOrders">My Orders</a>
+						</li>
+						<li id="Services-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+						</li>
+						@if (isHome == true)
+						{
+							<li class="nav-item">
+								<a data-toggle="modal" style="cursor: pointer;" class="nav-link" data-target="#FeedbackModal" onclick="addFeedback()">Feedback</a>
+							</li>
+						}
+					}
+					else
+					{
+						<li id="Services-li" class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+						</li>
+					}
+					
+				</ul>
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+					<partial name="_LoginPartial" />
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Header/Navigation -->
+	<!--Start Main Section-->
+	@if (IsContainer == true)
+	{
+		<div id="feedbackDiv"></div>
+		@RenderBody()
+	}
+	else
+	{
+		<div class="container">
+			<main role="main" class="pb-3">
+				<div id="feedbackDiv"></div>
+				@RenderBody()
+			</main>
+		</div>
+	}
+
+	<!--End Main Section-->
+	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4">
+					<div class="mb-4 footer-logo-wrap">
+						<a href="#" class="footer-logo">ClothX<span></span></a>
+					</div>
+					<p class="mb-4">
+						Elevate your wardrobe with ClothX, where discerning clients experience the art of bespoke tailoring, creating fashion that speaks their style.
+					</p>
+
+					<ul class="list-unstyled custom-social">
+						<li>
+							<a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+						</li>
+						<li>
+							<a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+						</li>
+						<li>
+							<a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+						</li>
+						<li>
+							<a href="#"><span class="fa fa-brands fa-linkedin"></span></a>
+						</li>
+					</ul>
+				</div>
+
+				@*<div class="col-lg-8">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Knowledge base</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Our team</a></li>
+								<li><a href="#">Leadership</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Nordic Chair</a></li>
+								<li><a href="#">Kruzo Aero</a></li>
+								<li><a href="#">Ergonomic Chair</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>*@
+			</div>
+
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							. All Rights Reserved. &mdash; Designed with love by
+							<a href="https://untree.co">Untree.co</a> Distributed By
+							<a hreff="https://themewagon.com">ThemeWagon</a>
+							<!-- License information: https://untree.co/license/ -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+	<script src="~/ecommerceAssets/js/tiny-slider.js"></script>
+	<script src="~/ecommerceAssets/js/custom.js"></script>
+
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		function addFeedback() {
+			$.ajax({
+				type: "Get",
+				url: "/Home/Feedback",
+				data: { url: window.location.href },
+				success: function (result) {
+					$("#feedbackDiv").html(result);
+					$("#FeedbackModal").modal('show');
+				}
+			})
+		}
+
+		function extractSecondPathSegment(url) {
+			const match = url.match(/^(https?:\/\/[^/]+|file:\/\/\/[^/]+)?(\/[^?#]*)/);
+			if (match) {
+				const pathSegments = match[2].split('/').filter(segment => segment !== '');
+				if (pathSegments.length > 1) {
+					return pathSegments[1];
+				}
+			}
+			return null;
+		}
+
+		function extractFirstPathSegment(url) {
+			const match = url.match(/^(https?:\/\/[^/]+|file:\/\/\/[^/]+)?(\/[^?#]*)/);
+			if (match) {
+				const pathSegments = match[2].split('/').filter(segment => segment !== '');
+				if (pathSegments.length > 0) {
+					return pathSegments[0];
+				}
+			}
+			return "Home";
+		}
+		const path = extractFirstPathSegment(window.location.href);
+		const id = path + '-li';
+
+
+		document.getElementById(id).classList.add('active');
+
+	</script>
+
+	<script defer src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+	<script defer src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.data-table').DataTable({
+				responsive: true,
+			});
+		});
+	</script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

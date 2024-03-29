@@ -1,0 +1,75 @@
+﻿@page "/Account/Register"
+@model RegisterModel
+@{
+	ViewData["Title"] = "Register";
+	ViewBag.TitleText = "Register a New Account";
+	ViewBag.MainDivClass = "col-lg-6 offset-lg-3";
+	Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+
+<form id="registerform" style="margin-top: 80px">
+
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="md-form form-lg md-outline form-floating">
+				<input class="form-control form-control-lg" asp-for="Input.FirstName" style="font-size: 16px;" />
+				<label class="form-lg" asp-for="Input.FirstName" style="font-size: 16px;">First Name</label>
+				<span asp-validation-for="Input.FirstName" class="field-validation-valid text-danger" style="font-size: 16px;"></span>
+			</div>
+		</div>
+
+
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="md-form form-lg md-outline form-floating">
+				<input class="form-control form-control-lg" asp-for="Input.LastName" style="font-size: 16px;" />
+				<label class="form-lg" asp-for="Input.LastName" style="font-size: 16px;">Last Name</label>
+				<span asp-validation-for="Input.LastName" class="field-validation-valid text-danger" style="font-size: 16px;"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12" style="font-size: 14px;">
+			<div class="md-form form-lg md-outline form-floating">
+				<input class="form-control form-control-lg" asp-for="Input.Email" style="font-size: 16px;" />
+				<label class="form-lg" asp-for="Input.Email" style="font-size: 16px;">Email</label>
+				<span asp-validation-for="Input.Email" class="field-validation-valid text-danger" style="font-size: 16px;"></span>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="md-form form-lg md-outline form-floating">
+				<input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+				<label asp-for="Input.Password" style="font-size: 16px;"></label>
+				<span asp-validation-for="Input.Password" class="text-danger"></span>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="md-form form-lg md-outline form-floating">
+				<input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
+				<label asp-for="Input.ConfirmPassword" style="font-size: 16px;">Confirm Password</label>
+				<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+	<div style="justify-content: space-between;flex-direction: row-reverse;display: flex;align-items: center;margin-top: 25px;">
+		<button type="submit" value="Register" class=" btn account-btn btn-md waves-effect waves-light">Register</button>
+		<a href="./Login" style="font-weight: bolder; text-decoration: none;">Sign in instead</a>
+	</div>
+
+</form>
+
+
+
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

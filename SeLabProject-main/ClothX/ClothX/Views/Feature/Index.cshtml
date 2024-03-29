@@ -1,0 +1,85 @@
+﻿@model IEnumerable<ClothX.DbModels.FeatureGroup>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-12">
+		<h1><b>Feature Groups</b></h1>
+	</div>
+	<div class="col-md-6 col-sm-12 col-12" style="display: flex; justify-content: flex-end;align-items:center ">
+		<a data-toggle="modal" class="btn btn-primary" data-target="#FeatureGroupModal" onclick="addFeatureGroup(0)">Create New</a>
+	</div>
+</div>
+<div id="addDiv"></div>
+
+<div class="table-responsive">
+
+	<table class="table data-table">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Name)
+				</th>
+				<th>
+					Status
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						@if (item.IsActive == true)
+						{
+							<span class="chip bg-success">Active</span>
+						}
+						else
+						{
+							<span class="chip bg-danger">In-Active</span>
+						}
+					</td>
+					<td>
+						<div class="btn-group">
+
+							<a data-toggle="modal" class="btn btn-secondary" data-target="#FeatureGroupModal" onclick="addFeatureGroup(@item.Id)">Edit</a>
+							<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+							@if (item.IsActive == true)
+							{
+								<a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+							}
+							else
+							{
+								<a class="btn btn-success" asp-action="Delete" asp-route-id="@item.Id">Activate</a>
+							}
+						</div>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function addFeatureGroup(id) {
+		$.ajax({
+			type: "Get",
+			url: "/Feature/Create",
+			data: { Id: id },
+			success: function (result) {
+				$("#addDiv").html(result);
+				$("#FeatureGroupModal").modal('show');
+			}
+		})
+	}
+</script>

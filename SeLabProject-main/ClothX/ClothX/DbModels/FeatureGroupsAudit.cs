@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace ClothX.DbModels
+{
+    public partial class FeatureGroupsAudit
+    {
+        public int AuditId { get; set; }
+        public DateTime? AuditDate { get; set; }
+        public string? AuditUser { get; set; }
+        public string? AuditOperation { get; set; }
+        public int? Id { get; set; }
+        public string? Name { get; set; }
+        public DateTime? AddedOn { get; set; }
+        public string? AddedBy { get; set; }
+        public DateTime? UpdatedOn { get; set; }
+        public bool? IsActive { get; set; }
+    }
+}

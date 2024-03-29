@@ -1,0 +1,46 @@
+﻿@model ClothX.DbModels.Review
+
+@{
+    Layout = null;
+}
+
+<div class="modal fade" id="FeedbackInfoModal" tabindex="-1" aria-labelledby="FeedbackInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="FeedbackInfoModalLabel">@Model.User.FirstName @Model.User.LastName</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h3>Feedback</h3>
+                    <p>@Model.Message</p>
+                </div>
+                @if (Model.Response == null)
+                {
+                    <form asp-action="Respond" enctype="multipart/form-data">
+                        <input asp-for="Id" value="@ViewBag.Id" hidden />
+
+                        <div class="form-floating">
+                            <input asp-for="Response" class="form-control" required />
+                            <label asp-for="Response" class="control-label"></label>
+                            <span asp-validation-for="Response" class="text-danger"></span>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div>
+                        <h3>Response</h3>
+                        <p>@Model.Response</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

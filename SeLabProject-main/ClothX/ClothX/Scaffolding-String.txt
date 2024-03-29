@@ -1,0 +1,11 @@
+﻿Scaffolding String: 
+Scaffold-DbContext "Server=(local); Database=ClothXDb; Integrated Security=True; TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir DbModels -Force
+
+In case:
+	Replace OnConfiguring in DbModels/DbContext File with following code
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.UseLazyLoadingProxies();
+    optionsBuilder.UseSqlServer("Server=(local); Database=ClothXDb; Integrated Security=True; TrustServerCertificate=True");
+}

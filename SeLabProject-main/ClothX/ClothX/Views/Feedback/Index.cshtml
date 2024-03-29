@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ClothX.DbModels.Review>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div class="row">
+	<div class="col-md-6 col-sm-12 col-12">
+		<h1><b>Feedbacks</b></h1>
+	</div>
+</div>
+<div id="addDiv"></div>
+
+<div class="table-responsive">
+
+<table class="table data-table">
+	<thead>
+		<tr>
+			<th>
+				User Name
+			</th>
+			<th>
+				Rating
+			</th>
+			<th>
+				Date
+			</th>
+			<th>
+				isResponded
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@item.User.FirstName @item.User.LastName
+				</td>
+				<td>
+					@item.Rating
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.AddedOn)
+				</td>
+				<td>
+					@if(item.Response!=null)
+					{
+						<span class="chip bg-success">Yes</span>
+					}
+					else
+					{
+						<span class="chip bg-secondary">No</span>
+					}
+				</td>
+				<td>
+					<a data-toggle="modal" class="btn btn-info" data-target="#FeedbackInfoModal" onclick="FeedbackInfo(@item.Id)">Info</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function FeedbackInfo(id) {
+		$.ajax({
+			type: "Get",
+			url: "/Feedback/Info",
+			data: { Id: id },
+			success: function (result) {
+				$("#addDiv").html(result);
+				$("#FeedbackInfoModal").modal('show');
+			}
+		})
+	}
+</script>

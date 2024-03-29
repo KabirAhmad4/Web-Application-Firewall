@@ -1,0 +1,88 @@
+﻿@model ClothX.DbModels.FeatureGroup
+
+@{
+    ViewData["Title"] = "Details";
+    string featureGroupId = Model.Id + ".0";
+}
+
+<div class="row">
+    <div class="col-md-6 col-sm-12 col-12">
+        <h1><b>@Model.Name</b></h1>
+    </div>
+    <div class="col-md-6 col-sm-12 col-12" style="display: flex; justify-content: flex-end;align-items:center ">
+        <a data-toggle="modal" class="btn btn-primary" data-target="#FeatureModal" onclick="addFeature(@featureGroupId)">Create New</a>
+    </div>
+</div>
+<div id="addDiv"></div>
+
+<div class="table-responsive">
+    <table class="table data-table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Status
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Features)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @if (item.IsActive == true)
+                        {
+                            <span class="chip bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="chip bg-danger">In-Active</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="btn-group">
+
+                            <a data-toggle="modal" class="btn btn-secondary" data-target="#FeatureModal" onclick="addFeature(@(Model.Id+"."+item.Id))">Edit</a>
+                            @if (item.IsActive == true)
+                            {
+                                <a class="btn btn-danger" asp-action="DeleteFeature" asp-route-id="@item.Id">Delete</a>
+                            }
+                            else
+                            {
+                                <a class="btn btn-success" asp-action="DeleteFeature" asp-route-id="@item.Id">Activate</a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function addFeature(id) {
+        $.ajax({
+            type: "Get",
+            url: "/Feature/CreateFeature",
+            data: { Id: id },
+            success: function (result) {
+                $("#addDiv").html(result);
+                $("#FeatureModal").modal('show');
+            }
+        })
+    }
+</script>

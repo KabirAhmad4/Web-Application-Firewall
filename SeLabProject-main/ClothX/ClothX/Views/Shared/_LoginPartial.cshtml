@@ -1,0 +1,45 @@
+﻿@using ClothX.DbModels;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+	ClothXDbContext db = new ClothXDbContext();
+	UserProfile user = new UserProfile();
+	if (User.Identity.Name != null && User.Identity.Name != "")
+	{
+		var dbUser = db.AspNetUsers.Where(x => x.UserName == User.Identity.Name).FirstOrDefault();
+		user = db.UserProfiles.Where(x => x.UserId == dbUser.Id).FirstOrDefault();
+	}
+}
+
+@if (SignInManager.IsSignedIn(User))
+{
+	<li class="nav-item nav-profile dropdown">
+		<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+			<img src="~/ecommerceAssets/images/user.svg" />
+		</a>
+		<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+
+			<div class="dropdown-header text-center">
+				<img class="img-md rounded-circle" width="70" height="70" src="@(user.ImagePath!="" && user.ImagePath!=null?user.ImagePath:"/Images/DefaultUser.png")" alt="Profile image">
+				<p class="mb-1 mt-3 font-weight-semibold">@user.FirstName @user.LastName</p>
+				<p class="fw-light text-muted mb-0">@user.User.Email</p>
+			</div>
+			<a class="dropdown-item" asp-controller="User" asp-action="Profile">
+				<i class="fa-solid fa-gear"></i>
+				Profile
+			</a>
+			<a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post">
+				<i class="fa-solid fa-arrow-right-from-bracket"></i>
+				Logout
+			</a>
+		</div>
+	</li>
+}
+else
+{
+	<li class="nav-item">
+		<a class="nav-link btn btn-white-outline" asp-area="Identity" asp-page="/Account/Login">Sign In</a>
+	</li>
+}
