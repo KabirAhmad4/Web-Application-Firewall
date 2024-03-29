@@ -1,0 +1,16 @@
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.AssemblyReference.cache
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.SuggestedBindingRedirects.cache
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE_Projext.Home.resources
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE_Projext.Properties.Resources.resources
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.GenerateResource.cache
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.CoreCompileInputs.cache
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\bin\Debug\SE Projext.exe.config
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\bin\Debug\SE Projext.exe
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\bin\Debug\SE Projext.pdb
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\bin\Debug\MaterialSkin.dll
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.CopyComplete
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.exe
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE Projext.pdb
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE_Projext.login_form.resources
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE_Projext.Forms.SigninSgnup.resources
+D:\Semester 5\SE Lab\SeLabProject\SE Projext\SE Projext\obj\Debug\SE_Projext.Forms.SignUp.resources

@@ -40,8 +40,8 @@ namespace ClothX.Data
 				await userManager.AddToRoleAsync(user, RoleType.Tailor.ToString());
 				string userId = db.AspNetUsers.Where(x => x.Email == user.Email && x.PasswordHash == user.PasswordHash).FirstOrDefault().Id;
 				userProfile.UserId = userId;
-				userProfile.FirstName = "Kabir";
-				userProfile.LastName = "Ahmad";
+				userProfile.FirstName = "Umair";
+				userProfile.LastName = "Noor";
 				userProfile.AddedOn = DateTime.Today.Date;
 				userProfile.IsApproved = true;
 				userProfile.IsActive = true;
