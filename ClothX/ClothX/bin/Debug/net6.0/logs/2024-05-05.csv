@@ -1,0 +1,2 @@
+2024-05-05 19:32:46.6793|Error|'System.Dynamic.DynamicObject' does not contain a definition for 'IsMyOrders' occurred in ClothX.Controllers.OrderController's ClientOrders method. | 
+2024-05-05 19:32:50.6571|Error|'System.Dynamic.DynamicObject' does not contain a definition for 'IsMyOrders' occurred in ClothX.Controllers.OrderController's ClientOrders method. | 

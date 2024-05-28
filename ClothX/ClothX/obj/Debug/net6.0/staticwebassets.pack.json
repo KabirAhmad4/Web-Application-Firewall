@@ -1,0 +1,745 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ClothX.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ClothX.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\DefaultUser.png",
+      "PackagePath": "staticwebassets\\Images\\DefaultUser.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\034314fc-162f-48ac-905a-e083ab51f01d.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\034314fc-162f-48ac-905a-e083ab51f01d.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\3caa6138-a82c-4e4e-8da1-4eb38a963835.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\3caa6138-a82c-4e4e-8da1-4eb38a963835.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\3ef4f503-9ddc-46e9-a012-f068b067fef9.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\3ef4f503-9ddc-46e9-a012-f068b067fef9.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\4f6dc0e1-8f5f-4bd7-88ff-cc5adb3c8581.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\4f6dc0e1-8f5f-4bd7-88ff-cc5adb3c8581.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\8819a5eb-a9ae-42e4-9a89-0d8127274b66.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\8819a5eb-a9ae-42e4-9a89-0d8127274b66.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\8da2eefa-b994-429e-93d7-e7754b3c3e95.png",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\8da2eefa-b994-429e-93d7-e7754b3c3e95.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\ProjectImages\\bcaea326-5c3c-4166-869c-a52737e95b3f.jpg",
+      "PackagePath": "staticwebassets\\Images\\ProjectImages\\bcaea326-5c3c-4166-869c-a52737e95b3f.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\UserImages\\01add6e8-a49d-49b0-8d95-0c8492979a1b.JPG",
+      "PackagePath": "staticwebassets\\Images\\UserImages\\01add6e8-a49d-49b0-8d95-0c8492979a1b.JPG"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\UserImages\\55f49959-619a-488d-932d-4e7b2732eece.jpeg",
+      "PackagePath": "staticwebassets\\Images\\UserImages\\55f49959-619a-488d-932d-4e7b2732eece.jpeg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\UserImages\\72a18575-42bc-4feb-949e-56803c05e0f6.png",
+      "PackagePath": "staticwebassets\\Images\\UserImages\\72a18575-42bc-4feb-949e-56803c05e0f6.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\logo-transparent.png",
+      "PackagePath": "staticwebassets\\Images\\logo-transparent.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\css\\error.css",
+      "PackagePath": "staticwebassets\\css\\error.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\css\\style.css",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\css\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\css\\tiny-slider.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\bag.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\bag.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\bowl-2.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\bowl-2.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\bowl-3.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\bowl-3.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\cart.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\cart.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\couch.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\couch.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\cross.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\cross.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\dots-green.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\dots-green.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\dots-light.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\dots-light.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\dots-yellow.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\dots-yellow.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\envelope-outline.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\envelope-outline.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\footer-img.jpeg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\footer-img.jpeg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\hero-image.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\hero-image.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\img-grid-1.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\img-grid-1.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\img-grid-2.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\img-grid-2.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\img-grid-3.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\img-grid-3.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person-1.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person-1.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person-1.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person-1.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person_1.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person_2.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person_3.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\person_4.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\post-1.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\post-1.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\post-2.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\post-2.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\post-3.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\post-3.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\product-1.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\product-1.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\product-2.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\product-2.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\product-3.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\product-3.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\return.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\return.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\sofa.png",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\sofa.png"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\support.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\support.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\truck.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\truck.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\user.svg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\user.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\images\\why-choose-us-img.jpg",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\images\\why-choose-us-img.jpg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\js\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\js\\tiny-slider.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\prepros-6.config",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\prepros-6.config"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\ecommerceAssets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\ecommerceAssets\\scss\\style.scss"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\js\\error.js",
+      "PackagePath": "staticwebassets\\js\\error.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-autoplay.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-autoplay.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-comments.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-comments.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-fullscreen.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-fullscreen.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-medium-zoom.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-medium-zoom.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-pager.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-pager.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-relative-caption.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-relative-caption.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-rotate.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-rotate.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-share.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-share.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-thumbnail.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-thumbnail.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-transitions.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-transitions.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-video.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-video.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lg-zoom.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lg-zoom.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lightgallery-bundle.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lightgallery-bundle.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lightgallery-bundle.min.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lightgallery-bundle.min.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lightgallery-core.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lightgallery-core.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\css\\lightgallery.css",
+      "PackagePath": "staticwebassets\\lightgallery\\css\\lightgallery.css"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\fonts\\lg.svg",
+      "PackagePath": "staticwebassets\\lightgallery\\fonts\\lg.svg"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\fonts\\lg.ttf",
+      "PackagePath": "staticwebassets\\lightgallery\\fonts\\lg.ttf"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\fonts\\lg.woff",
+      "PackagePath": "staticwebassets\\lightgallery\\fonts\\lg.woff"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\fonts\\lg.woff2",
+      "PackagePath": "staticwebassets\\lightgallery\\fonts\\lg.woff2"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\lightgallery\\images\\loading.gif"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\lightgallery.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\lightgallery.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\lightgallery.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\lightgallery.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\lightgallery.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\lightgallery.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\autoplay\\lg-autoplay.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\autoplay\\lg-autoplay.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\autoplay\\lg-autoplay.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\autoplay\\lg-autoplay.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\autoplay\\lg-autoplay.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\autoplay\\lg-autoplay.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\comment\\lg-comment.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\comment\\lg-comment.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\comment\\lg-comment.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\comment\\lg-comment.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\comment\\lg-comment.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\comment\\lg-comment.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\fullscreen\\lg-fullscreen.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\hash\\lg-hash.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\hash\\lg-hash.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\hash\\lg-hash.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\hash\\lg-hash.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\hash\\lg-hash.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\hash\\lg-hash.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\mediumZoom\\lg-medium-zoom.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\pager\\lg-pager.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\pager\\lg-pager.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\pager\\lg-pager.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\pager\\lg-pager.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\pager\\lg-pager.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\pager\\lg-pager.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\relativeCaption\\lg-relative-caption.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\rotate\\lg-rotate.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\rotate\\lg-rotate.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\rotate\\lg-rotate.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\rotate\\lg-rotate.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\rotate\\lg-rotate.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\rotate\\lg-rotate.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\share\\lg-share.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\share\\lg-share.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\share\\lg-share.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\share\\lg-share.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\share\\lg-share.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\share\\lg-share.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\thumbnail\\lg-thumbnail.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\video\\lg-video.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\video\\lg-video.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\video\\lg-video.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\video\\lg-video.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\video\\lg-video.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\video\\lg-video.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\vimeoThumbnail\\lg-vimeo-thumbnail.umd.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\zoom\\lg-zoom.es5.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\zoom\\lg-zoom.es5.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\zoom\\lg-zoom.min.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\zoom\\lg-zoom.min.js"
+    },
+    {
+      "Id": "E:\\Study\\6th Semester\\IS\\New folder\\ClothX\\ClothX\\wwwroot\\lightgallery\\plugins\\zoom\\lg-zoom.umd.js",
+      "PackagePath": "staticwebassets\\lightgallery\\plugins\\zoom\\lg-zoom.umd.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ClothX.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ClothX.props",
+      "PackagePath": "build\\ClothX.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ClothX.props",
+      "PackagePath": "buildMultiTargeting\\ClothX.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ClothX.props",
+      "PackagePath": "buildTransitive\\ClothX.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
